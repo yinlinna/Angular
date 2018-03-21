@@ -1,0 +1,22 @@
+<body>
+<div class="content">
+  <h2 class="ing">正在进行
+    <span id="todocount">{{data.length}}</span>
+  </h2>
+  <ul>
+    <li *ngFor="let item of data;let i = index" class="int">
+      <input type="checkbox" (change)="changeone(i)" >{{item}}
+      <button (click)="delete(i)" class="del">删除</button>
+    </li>
+  </ul>
+  <h2 class="already">已经完成
+      <span id="donecount">{{dataArr.length}}</span>
+    </h2>
+  <ul>
+    <li *ngFor="let item of dataArr;let i = index">
+        <input type="checkbox" (change)="changetwo(i)" class="int">{{item}}
+        <button (click)="deleteArr(idx)" class="del">删除</button>
+    </li>
+  </ul>
+  </div> 
+  </body>

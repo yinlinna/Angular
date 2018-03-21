@@ -1,0 +1,41 @@
+.box{
+    width: 300px;
+    margin: 30px auto;
+}
+
+.to{
+    font-size: 20px;
+    margin-right:100px;
+    font-weight:bold;
+    color:white;
+}
+.txt{
+    background-color: #575757;
+    height:50px;
+    line-height:50px;
+}
+.text{
+    border-radius: 6px;
+    height:23px;
+    width:300px;
+}
+.btn{
+    background-color:#7A8B8B;
+    margin-left:15px;
+    border: none;
+    color: white;
+    height:30px;
+    width:80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 6px;
+}
+.content{
+    background-color: #EDEDED;
+    height:100%;
+}
+.ing{
+    margin-right:100px;
+}
