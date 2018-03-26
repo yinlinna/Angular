@@ -1,0 +1,10 @@
+<router-outlet></router-outlet>
+<div class="content"> 
+  <div *ngFor="let item of list;let i = index" (click)= "goDetail(i)" class="list">
+    <img src="{{item.goodsListImg}}" [routerLink] = "['/gooddetail/',i]">
+    <p [routerLink] = "['/gooddetail/',i]">{{item.goodsName}}</p>
+    <h3 class="price">￥{{item.price}}</h3>
+    <button id="btn">去购买</button>
+    
+  </div>
+  </div>
