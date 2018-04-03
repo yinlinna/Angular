@@ -1,0 +1,15 @@
+<ion-content padding style="background-color:background-image: url('../../assets/imgs/bg.jpg');">
+  <img src="../../assets/imgs/logo1.png" alt="" class="img">
+    <ion-list>
+        <ion-item>
+          <ion-input  clearInput type="text" placeholder="QQ号/手机号/邮箱" class="inp" [(ngModel)]="username"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input clearInput type="password" placeholder="密码" [(ngModel)]="password"></ion-input>
+        </ion-item>
+        <button ion-button class="btn" (click)="load()">登陆</button>            
+      </ion-list>
+      <h1><span class="jizhu">忘记密码</span><span class="zhuce" (click)="zhuce()">新用户注册</span></h1>
+</ion-content>
+
