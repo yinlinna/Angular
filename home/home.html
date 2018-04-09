@@ -1,0 +1,211 @@
+<ion-header>
+  <ion-navbar class="header" color = "yellow" id="nav">
+
+    <ion-icon name="ios-menu" menuToggle class="icon"></ion-icon>
+
+    <img src="../assets/imgs/images/header.png" class="header-one">
+    <img src="../assets/imgs/images/search1.png" class="search">
+  </ion-navbar>
+
+</ion-header> 
+<ion-menu type="overlay"  [content]="mycontent">
+  <ion-content>
+      <ion-list>
+          <ion-item color = "red">
+              <ion-avatar item-start>
+                  <img src="../assets/imgs/1.jpg">
+              </ion-avatar>
+              个人中心
+          </ion-item>
+          <ion-item color = "red">
+            <ion-icon name="ios-cube" item-start></ion-icon> 我的收藏</ion-item>
+          <ion-item color = "red">
+            <ion-icon name="ios-image" item-start></ion-icon>我的相册</ion-item>
+          <ion-item color = "red">
+            <ion-icon name="ios-folder" item-start></ion-icon>我的下载</ion-item>
+          <ion-item color = "red">
+              <ion-icon name="ios-download" item-start></ion-icon>我的文件</ion-item>
+        </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-nav #mycontent [root]="rootPage"></ion-nav>
+<ion-content>
+<div>
+<ion-slides paper >
+  <ion-slide pager>
+    <img src="../assets/imgs/images/bar.jpg">
+ </ion-slide>
+
+<ion-slide>
+  <img src="../assets/imgs/images/bar.jpg">
+</ion-slide>
+
+<ion-slide>
+  <img src="../assets/imgs/images/bar.jpg">
+</ion-slide>
+</ion-slides>
+
+  <ion-segment [(ngModel)]="pet" color="yellow">
+    <ion-segment-button value="kittens">
+      找信息
+    </ion-segment-button>
+    <ion-segment-button value="puppies">
+      找服务
+    </ion-segment-button>
+  </ion-segment>
+  <div [ngSwitch]="pet">
+   
+      <ion-list *ngSwitchCase="'kittens'">
+          <table>
+       <tr>        
+         <th><img src="../assets/imgs/images/table1.png"><p>资产包转让</p></th>      
+         <th><img src="../assets/imgs/images/table2.png"><p>债权转让</p></th>
+         <th><img src="../assets/imgs/images/table3.png"><p>固产转让</p></th>
+         <th><img src="../assets/imgs/images/table4.png"><p>商业保理</p></th>
+       </tr>
+       <tr>        
+           <th><img src="../assets/imgs/images/table5.png"><p>典当担保</p></th>      
+           <th><img src="../assets/imgs/images/table6.png"><p>融资借贷</p></th>
+           <th><img src="../assets/imgs/images/table7.png"><p>悬赏信息</p> </th>
+           <th><img src="../assets/imgs/images/table8.png"><p>尽职调查</p></th>
+         </tr>
+     </table>
+     <div class="item">
+     <div class="guan"> 
+       <img src="../assets/imgs/images/guan.png"> <span>优质信息</span>
+     </div>
+    <div class="center"><p>资产包转让<span>--FBOO1</span></p></div>
+     <div class="items">
+        <img src="../assets/imgs/images/item1.png">
+        <div class="area"><p>地区：<span>北京</span></p>
+        <p>来源：<span>银行</span></p>
+        <p>类型：<span>抵押</span></p></div>
+     </div>
+     <div class="money1">
+       <h2>500万</h2>
+       <p>总金额</p>
+     </div>
+     <div class="money2">
+         <h2>300万</h2>
+         <p>转让价</p>
+       </div>
+   </div>
+
+   <div class="item">
+      <div class="center"><p>委外催收<span>--FBOO1</span></p></div>
+       <div class="items">
+          <img src="../assets/imgs/images/item2.png">
+          <div class="area"><p>地区：<span>北京</span></p>
+          <p>状态：<span>已诉讼</span></p>
+          <p>类型：<span>个人</span></p></div>
+       </div>
+       <div class="money1">
+         <h2>100</h2>
+         <p>金额</p>
+       </div>
+       <div class="money2">
+           <h2>15%-30%</h2>
+           <p>佣金比例</p>
+         </div>
+     </div>
+
+     <div class="item">
+         <div class="center"><p>法律服务<span>--FBOO1</span></p></div>
+          <div class="items">
+             <img src="../assets/imgs/images/item3.png">
+             <div class="area"><p>地区：<span>北京</span></p>
+             <br/>
+             <p>类型：<span>民事</span></p></div>
+          </div>
+          <div class="money1">
+            <h2>咨询</h2>
+            <p>需求</p>
+          </div>
+          
+        </div> 
+       </ion-list>
+    
+      <ion-list *ngSwitchCase="'puppies'">
+          <table>
+              <tr>        
+                  <th><img src="../assets/imgs/images/table3.png"><p>固产转让</p></th>
+                  <th><img src="../assets/imgs/images/table4.png"><p>商业保理</p></th>
+                <th><img src="../assets/imgs/images/table1.png"><p>资产包转让</p></th>      
+                <th><img src="../assets/imgs/images/table2.png"><p>债权转让</p></th>
+                
+              </tr>
+              <tr>    
+                  <th><img src="../assets/imgs/images/table7.png"><p>悬赏信息</p> </th>
+                  <th><img src="../assets/imgs/images/table8.png"><p>尽职调查</p></th>    
+                  <th><img src="../assets/imgs/images/table5.png"><p>典当担保</p></th>      
+                  <th><img src="../assets/imgs/images/table6.png"><p>融资借贷</p></th>
+                  
+                </tr>
+            </table>
+    <div class="item">
+    <div class="guan"> 
+      <img src="../assets/imgs/images/guan.png"> <span>优质信息</span>
+    </div>
+   <div class="center"><p>资产包转让<span>--FBOO1</span></p></div>
+    <div class="items">
+       <img src="../assets/imgs/images/item1.png">
+       <div class="area"><p>地区：<span>北京</span></p>
+       <p>来源：<span>银行</span></p>
+       <p>类型：<span>抵押</span></p></div>
+    </div>
+    <div class="money1">
+      <h2>500万</h2>
+      <p>总金额</p>
+    </div>
+    <div class="money2">
+        <h2>300万</h2>
+        <p>转让价</p>
+      </div>
+  </div>
+
+  <div class="item">
+     <div class="center"><p>委外催收<span>--FBOO1</span></p></div>
+      <div class="items">
+         <img src="../assets/imgs/images/item2.png">
+         <div class="area"><p>地区：<span>北京</span></p>
+         <p>状态：<span>已诉讼</span></p>
+         <p>类型：<span>个人</span></p></div>
+      </div>
+      <div class="money1">
+        <h2>100</h2>
+        <p>金额</p>
+      </div>
+      <div class="money2">
+          <h2>15%-30%</h2>
+          <p>佣金比例</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="center"><p>法律服务<span>--FBOO1</span></p></div>
+         <div class="items">
+            <img src="../assets/imgs/images/item3.png">
+            <div class="area"><p>地区：<span>北京</span></p>
+            <br/>
+            <p>类型：<span>民事</span></p></div>
+         </div>
+         <div class="money1">
+           <h2>咨询</h2>
+           <p>需求</p>
+         </div>
+         
+       </div>
+
+      </ion-list>
+    </div>
+    <div>{{item}}</div>
+   
+</div>
+  
+<ion-infinite-scroll (ionInfinite)="doInfinite($event)" threshold="100px">
+  <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+  </ion-infinite-scroll-content>
+</ion-infinite-scroll> 
+    
+</ion-content>
+
