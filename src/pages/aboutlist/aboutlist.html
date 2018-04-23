@@ -1,0 +1,56 @@
+<!--
+  Generated template for the AboutlistPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color='mainColor'>
+    <img src="assets/imgs/left.png" alt="" (click)='back()'>
+    <span>发布信息</span>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding text-center>
+
+   <ion-list>
+    <ion-item>
+      <p>地区</p>
+      <div item-content class="item-content">
+        <p style="color: rgb(207,207,207);font-size: 20px;">请选择</p>
+      </div>
+      <ion-icon name="arrow-dropright" item-end></ion-icon>
+    </ion-item>
+    <ion-item>
+        <p>来源</p>
+        <div item-content class="item-content">
+          <p style="font-size: 20px;">北京</p>
+        </div>
+        <ion-icon name="arrow-dropright" item-end></ion-icon>
+      </ion-item>
+      <ion-item>
+          <p>总金额</p>
+          <div item-content class="item-content">
+            <p style="color: rgb(207,207,207);font-size: 20px;">请输入</p>
+          </div>
+          <ion-icon name="arrow-dropright" item-end></ion-icon>
+        </ion-item>
+        <ion-item>
+            <p>转让价</p>
+            <div item-content class="item-content">
+              <p style="font-size: 20px;">500万</p>
+            </div>
+            <ion-icon name="arrow-dropright" item-end></ion-icon>
+          </ion-item>
+  </ion-list>
+  <p class='spe'>内容描述</p>
+  <textarea placeholder="请输入描述"></textarea>
+  <ion-item>
+      <p>清单上传</p>
+      <ion-icon name="arrow-dropright" item-end></ion-icon>
+    </ion-item>
+  <button ion-button >确认上传</button>
+</ion-content>

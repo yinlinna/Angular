@@ -1,0 +1,49 @@
+page-load {
+    ion-navbar{
+        text-align: center;
+        font-size:2rem;
+    }
+    
+    .btn .img1{
+        margin-top: 4px;
+        float: left;
+        vertical-align: middle;
+        width: 25px;
+        margin-left: 16px;
+    }
+    .btn .img2{
+        width: 20px;
+        float: right;
+    }
+    .btn .name{
+        float: left;
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+    .message{
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgb(238,238,238);
+    }
+    .message p span{
+        color: rgb(204,204,204);
+    }
+    .txt1{
+        font-size: 20px;
+        margin: 0px;
+    }
+    .message img{
+        width: 70px;
+        margin-top: 8px;
+    }
+    .message .spe{
+        margin: 0px 5px 0 5px;
+    }
+    .txt2{
+        color: rgb(153,153,153);
+        font-size: 16px;
+    }
+    .item-md{
+        padding-left: 0px;
+    }
+    }

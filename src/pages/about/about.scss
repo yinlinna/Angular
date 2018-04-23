@@ -1,0 +1,29 @@
+page-about {
+ion-col{
+  
+    width: 30%;
+    height: 100px;
+    text-align: center;
+}
+icon{
+    font-size: 15px;
+}
+.middle{
+
+    padding-top: 10px;
+    border: 1px solid rgb(229,229,229);
+}
+.middle img{
+    width: 30%;
+ 
+}
+[col-4] {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.33333%;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    width: 33.33333%;
+    margin-bottom: 20px;
+    max-width: 33.33333%;
+}
+}

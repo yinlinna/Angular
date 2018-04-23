@@ -1,0 +1,98 @@
+page-messagelists {
+    ion-navbar {
+        text-align: center;
+        font-size: 2rem;
+        }
+        ion-navbar img{
+            float: left;
+            width: 10px;
+            margin-left: 10px;
+        }
+        ion-navbar span{
+            margin-left: -10px;
+        }
+        .button-inner{
+            display: none;
+        }
+        .chat2 img{
+            margin-top: 10px;
+            //margin-left: 10px;
+            margin-right: 5px;
+            width: 50px;
+            float: right;
+        }
+        .chat2 span{
+            margin-top: 10px;
+            float:right;
+            width: 70px;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: white;
+            margin-right: 10px;
+        }
+    
+        .toolbar-content-md {
+            -webkit-box-flex: 1;
+            margin-left: -60px;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            -webkit-box-ordinal-group: 4;
+            -webkit-order: 3;
+            -ms-flex-order: 3;
+            order: 3;
+            min-width: 0;
+            max-width: 100%;
+        }
+        ion-content p{
+            text-align: center;
+        }
+        .dialog img{
+            margin-left: 10px;
+            width: 50px;
+        }
+        .dialog span{
+            display: inline-block;
+            width: 100px;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: white;
+            margin-left: 10px;
+        }
+        ion-footer input{
+            font-size: 20px;
+            border: 0px;
+            color: black;
+            margin-left: 20px;
+        }
+        ion-footer{
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        ion-icon {
+            display: inline-block;
+            font-size: 3rem;
+        }
+        ion-footer input::placeholder{
+            color: rgb(153,153,153);
+        }
+        input:focus {
+           border-bottom: 1px solid red;
+        }
+        .icon1{
+            float: left;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .icon2{
+            margin-top: 10px;
+            margin-right: 10px;
+           float: right;
+        }
+        .icon3{
+            margin-top: 10px;
+           float: right;
+           margin-right: 10px;
+        }
+}

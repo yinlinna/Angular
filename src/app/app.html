@@ -1,0 +1,35 @@
+<ion-menu [content]="content" id="menu1">
+    <ion-header color='mainColor'>
+      <ion-toolbar color='mainColor' (click)="login()">
+        <ion-title>个人中心</ion-title>
+      </ion-toolbar>
+    </ion-header>  
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>账号</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label fixed>地址</ion-label>
+          <ion-input type="url"></ion-input>
+        </ion-item>  
+        <ion-item>
+          <ion-label floating>邮箱</ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>  
+        <ion-item>
+          <ion-label>消息中心</ion-label>
+          <ion-toggle></ion-toggle>
+        </ion-item>  
+        <ion-item>
+          <ion-label>会员中心</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>  
+      </ion-list>    
+      <ion-list>
+        <button ion-item menuClose="menu1" detail-none >关闭</button>  
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

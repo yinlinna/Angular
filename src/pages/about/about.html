@@ -1,0 +1,24 @@
+<ion-header text-center>
+
+  <ion-navbar color='mainColor'>
+
+    <ion-title>
+     选择发布类型
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+ <ion-grid>
+   <ion-row>
+      <ion-col  *ngFor='let item of list;let i = index;' col-4 >
+        <div class="middle" (click)='push()'>
+          <img src="assets/imgs/transform.png" alt="">
+          <p> {{item}}</p>
+        </div>
+       
+      </ion-col>
+  </ion-row>
+ </ion-grid>
+</ion-content>

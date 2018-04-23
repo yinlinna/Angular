@@ -1,0 +1,133 @@
+<ion-header text-center>
+  <ion-navbar color='mainColor'>
+      <button ion-button color='white' [menuToggle]="activeMenu">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title><img src="assets/imgs/logo1.png" alt=""></ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only color='royal'>
+          <ion-icon name='search'></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-slides>
+    <ion-slide>
+     <img src="assets/imgs/slide2.png" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/slide.png" alt="">
+    </ion-slide>
+  </ion-slides>
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="appType">
+      <ion-segment-button value="Paid"class='findinf' >
+        找信息
+      </ion-segment-button>
+      <ion-segment-button value="Free" class="findser">
+        找服务
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+      <div class="search-grid" [ngSwitch]="appType">
+              <ion-slides pager="true">
+                  <ion-slide>
+                      <ion-grid *ngSwitchCase="'Paid'">
+                          <ion-row>
+                              <ion-col ion-3>
+                                <ion-item no-lines><img src="../../assets/imgs/homeSearch5.png" alt=""><p>典当担当</p></ion-item>
+                              </ion-col>
+                              <ion-col ion-3>
+                                <ion-item no-lines><img src="../../assets/imgs/homeSearch6.png" alt=""><p>融资借贷</p></ion-item>
+                              </ion-col>
+                              <ion-col ion-3>
+                                <ion-item no-lines><img src="../../assets/imgs/homeSearch7.png" alt=""><p>悬赏信息</p></ion-item>
+                              </ion-col>
+                              <ion-col ion-3>
+                                <ion-item no-lines><img src="../../assets/imgs/homeSearch8.png" alt=""><p>尽职调查</p></ion-item>
+                              </ion-col>
+                            </ion-row>
+                        <ion-row>
+                          <ion-col ion-3>
+                            <ion-item no-lines><img src="../../assets/imgs/homeSearch5.png" alt=""><p>典当担当</p></ion-item>
+                          </ion-col>
+                          <ion-col ion-3>
+                            <ion-item no-lines><img src="../../assets/imgs/homeSearch6.png" alt=""><p>融资借贷</p></ion-item>
+                          </ion-col>
+                          <ion-col ion-3>
+                            <ion-item no-lines><img src="../../assets/imgs/homeSearch7.png" alt=""><p>悬赏信息</p></ion-item>
+                          </ion-col>
+                          <ion-col ion-3>
+                            <ion-item no-lines><img src="../../assets/imgs/homeSearch8.png" alt=""><p>尽职调查</p></ion-item>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                  </ion-slide>
+                  <ion-slide>
+                      <ion-grid *ngSwitchCase="'Paid'">
+                          <ion-row>
+                              <ion-col ion-3>
+                                <ion-item no-lines><img src="../../assets/imgs/homeSearch5.png" alt=""><p>典当担当</p></ion-item>
+                              </ion-col>
+                              <ion-col ion-3>
+                                <ion-item no-lines><img src="../../assets/imgs/homeSearch6.png" alt=""><p>融资借贷</p></ion-item>
+                              </ion-col>
+                              <ion-col ion-3>
+                                <ion-item no-lines><img src="../../assets/imgs/homeSearch7.png" alt=""><p>悬赏信息</p></ion-item>
+                              </ion-col>
+                              <ion-col ion-3>
+                                <ion-item no-lines><img src="../../assets/imgs/homeSearch8.png" alt=""><p>尽职调查</p></ion-item>
+                              </ion-col>
+                            </ion-row>
+                      </ion-grid>
+                  </ion-slide>
+              </ion-slides>
+        </div>
+        <div [ngSwitch]="appType" class="search-free">   
+              <ion-grid *ngSwitchCase="'Free'">
+                  <ion-row>
+                      <ion-col ion-3>
+                        <ion-item no-lines><img src="../../assets/imgs/homeSearch5.png" alt=""><p>典当担当</p></ion-item>
+                      </ion-col>
+                      <ion-col ion-3>
+                        <ion-item no-lines><img src="../../assets/imgs/homeSearch6.png" alt=""><p>融资借贷</p></ion-item>
+                      </ion-col>
+                      <ion-col ion-3>
+                        <ion-item no-lines><img src="../../assets/imgs/homeSearch7.png" alt=""><p>悬赏信息</p></ion-item>
+                      </ion-col>
+                      <ion-col ion-3>
+                        <ion-item no-lines><img src="../../assets/imgs/homeSearch8.png" alt=""><p>尽职调查</p></ion-item>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+        </div>
+
+  <div class="great-inf">
+    <img src="assets/imgs/infor.png" alt="" class="great-inf-img">
+    <span class="great-inf-text">优质信息</span>
+  </div>
+  <ion-list inset *ngFor="let item of items;" >
+      <div>
+        <span>{{item.namelist}}</span><span class="special">--FB001</span>
+      </div>
+    <button ion-item >
+      <ion-avatar item-start>
+        <img src="assets/imgs/lo1.png">
+      </ion-avatar>
+      <p>{{item.name}}</p>
+      <p>{{item.origin}}</p>
+      <div item-content class="item-content">
+        <p style="color: red;font-size: 20px;">{{item.money}}</p>
+        <p>{{item.moneyName}}</p>
+      
+      </div>
+
+    </button> 
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+</ion-content>

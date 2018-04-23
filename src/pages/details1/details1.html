@@ -1,0 +1,37 @@
+<!--
+  Generated template for the Details1Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+
+  <ion-navbar color='mainColor'>
+    <img src="assets/imgs/left.png" alt="" (click)='back()'>
+    <span>我发布的</span>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list inset *ngFor="let item of items;" >
+    <div>
+      <span>{{item.namelist}}</span><span class="special">--FB001</span>
+    </div>
+  <button ion-item >
+    <ion-avatar item-start>
+      <img src="assets/imgs/lo1.png">
+    </ion-avatar>
+    <p>{{item.name}}</p>
+    <p>{{item.origin}}</p>
+    <div item-content class="item-content">
+      <p style="color: red;font-size: 20px;">{{item.money}}</p>
+      <p>{{item.moneyName}}</p>
+    
+    </div>
+
+  </button> 
+</ion-list>
+</ion-content>

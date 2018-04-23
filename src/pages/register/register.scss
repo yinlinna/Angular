@@ -1,0 +1,49 @@
+page-register {
+
+}
+#content{
+    background-image: url("../assets/imgs/login/bg1.jpg");
+}
+#content-color{
+    background-color:rgba(5, 5, 5,0.5);
+}
+
+#top img{
+    float:left;
+    height:35px;
+    width:35px;
+}
+#top p{
+    text-align:center;
+    color:white;
+    font-size:18px;
+    margin-top:25px;
+}
+#button {
+    text-align: center;
+}
+#button .register{
+    background-color: #ffcc33;
+    height:40px;
+    width:250px;
+    border-radius: 25px;
+    color:black;
+    font-size:16px;
+}
+#get{
+    background-color: #ffcc33;
+    height:40px;
+    width:100px;
+    color:black;
+    font-size:16px;
+    margin-left:10px;
+}
+#images{
+    width:250px;
+    margin:0 auto;
+    margin-bottom:30px;
+}
+::-moz-placeholder{
+    color:white;
+    font-size:10px;
+}

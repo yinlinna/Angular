@@ -1,0 +1,17 @@
+<ion-header text-center>
+  <ion-navbar  color='mainColor'>
+    <ion-title>消息</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of items" (click)="openNavDetailsPage(item)">
+      <ion-avatar item-start>
+        <img src="{{item.color}}">
+      </ion-avatar>
+      <h2>{{item.title}}</h2>
+      <p>{{item.description}}</p>
+      <ion-note item-end>{{item.time}}</ion-note>
+    </ion-item>
+  </ion-list>
+</ion-content>
